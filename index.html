@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>河内塔 3D 学习游戏</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>河内塔（3D）</h1>
+
+  <div class="controls">
+    圆盘数：
+    <input type="range" id="diskRange" min="3" max="8" value="5">
+    <span id="diskCount">5</span>
+
+    步数：<span id="moves">0</span>
+
+    <button id="resetBtn">重置</button>
+    <button id="autoBtn">自动解题</button>
+  </div>
+
+  <div class="game">
+    <div class="peg" data-index="0"></div>
+    <div class="peg" data-index="1"></div>
+    <div class="peg" data-index="2"></div>
+  </div>
+
+  <div id="message"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
